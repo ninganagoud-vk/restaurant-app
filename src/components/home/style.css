@@ -1,0 +1,31 @@
+@import '~antd/dist/antd.css';
+.homeComponent {
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.homeComponent div {
+    padding: 50px;
+}
+
+.inputContainer, .outputContainer {
+    border: 1px solid black;
+}
+
+.ant-btn {
+    padding: 20px 40px;
+}
+
+.ant-btn>span {
+    display: inline-block;
+    font-size: 19px;
+    position: relative;
+    bottom: 15px;
+}
+
+select {
+    text-transform: none;
+    margin-top: 16px;
+}
