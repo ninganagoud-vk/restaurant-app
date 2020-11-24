@@ -1,0 +1,119 @@
+.top {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+}
+
+.toco-image-header {
+    width: 67%;
+    height: 100%;
+    background: white url(../../../assets//images/taco.jpg);
+    background-size: cover;
+    background-position: bottom right;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.toco-image-header h2 {
+    font-size: 20px;
+    font-weight: 800;
+    color: black;
+    background: #ffc324;
+    display: block;
+    padding: 5px;
+    border-radius: 0.5rem;
+}
+
+.toco-image-header p {
+    background: #ffc324;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 0.5rem;
+}
+
+.toco-image img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.cta-wrapper {
+    width: 32%;
+    margin-top: 16px;
+    margin-left: 16px;
+}
+
+.cta {
+    height: 46%;
+    background: #ffc324;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 0.5rem;
+}
+
+.cta .price {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.cta p {
+    margin: auto;
+    text-align: center;
+}
+
+.cta>:nth-child(2) {
+    position: relative;
+    bottom: 30px;
+}
+
+.cta-wrapper {
+    height: 100%;
+    margin-bottom: 50px;
+}
+
+.cta-wrapper>div {
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 520px) {
+    .top {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .toco-image-header {
+        height: 70%;
+        width: 86%;
+    }
+    .cta {
+        height: 19%;
+    }
+    .cta-wrapper>div {
+        padding: 28px 0;
+        margin-top: 0;
+    }
+    .cta-wrapper {
+        width: 86%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+    .cta>:nth-child(2) {
+        bottom: 21px;
+    }
+    .cta .price {
+        font-size: 50px;
+    }
+}

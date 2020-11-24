@@ -1,14 +1,52 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
-import Home from './components/home';
+import Root from './components/Dashboard/root';
 
-function App() {
+const App = () => {
   return (
-    <div className="App" >
-      <h1>WelCome To Currency Converter App</h1>
-      <Home />
+    <div className="App">
+      <Router>
+        <Switch>
+          <Route
+            path='/'
+            exact
+            strict
+            component={Root}
+          />
+          <Route
+            path='/Tacos'
+            exact
+            strict
+            component={Root}
+          />
+          <Route
+            path='/Beers'
+            exact
+            strict
+            component={Root}
+          />
+          <Route
+            path='/Wines'
+            exact
+            strict
+            component={Root}
+          />
+          <Route
+            path='/Desserts'
+            exact
+            strict
+            component={Root}
+          />
+          <Route
+            path='/Reservations'
+            exact
+            strict
+            component={Root}
+          />
+        </Switch>
+      </Router>
     </div>
-  );
+  )
 }
-
 export default App;
