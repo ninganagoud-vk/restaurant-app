@@ -23,7 +23,7 @@
     margin-top: 27px;
 }
 
-.menu_link a {
+.menu_link li{
     color: black;
     font-size: 15px;
 }
@@ -42,7 +42,7 @@
 }
 
 @media screen and (max-width: 948px) {
-    .menu_link a {
+    .menu_link li{
         font-size: 10px;
     }
 }

@@ -26,13 +26,12 @@ class Menu extends Component {
     handleClick = () => {
         this.setState(prevState => {
             return { isToggle: !prevState.isToggle }
-        }, () => console.log('ewhjbfr', this.state.isToggle))
+        })
     }
     render() {
         return (
             <div className="menu">
                 <div className={"navbar-toggle-icon"} onClick={this.handleClick}>
-
                     <Button type="primary" icon={this.state.isToggle ?
                         <CloseOutlined style={{ color: "#d3d3d3", fontSize: '20px' }} />
                         : <MenuUnfoldOutlined style={{ color: "#d3d3d3", fontSize: '20px' }} />
@@ -43,9 +42,9 @@ class Menu extends Component {
     </Button>
                 </div>
                 <ul className={this.state.isToggle ? "menu-list" : "main-nav-toggle"}>
-                    {manuList.map((list) => <Link to={`/${list.name}`} className="menu_link">
+                    {manuList.map((list) => <Link to={`/${list.name}`} className="menu_link" key={list.name}>
                         <li>
-                            <a href="/#">{list.name}</a>
+                            {list.name}
                         </li></Link>
                     )}
                 </ul>

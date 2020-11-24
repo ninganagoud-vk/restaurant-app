@@ -27,7 +27,7 @@ const Features = () => {
     return (
         <div className="features">
             <ul className="features-list">
-                {featuresList.map(feature => <li>
+                {featuresList.map(feature => <li key={feature.name}>
                     <img src={feature.icon} alt={`${feature.name}`} />
                     <h3>{feature.name}</h3>
                     <p>

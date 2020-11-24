@@ -23,7 +23,7 @@ h1 {
 }
 
 .gallery-images img {
-  width: 83%;
+  width: 200px;
   height: 200px;
   margin-top: 20px;
   margin-left: 14px;
@@ -42,4 +42,8 @@ h1 {
     font-size: 20px;
     font-weight: 300;
   }
+  .gallery-images img {
+    width: 83%;
+  }
+
 }
